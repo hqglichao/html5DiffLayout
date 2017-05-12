@@ -2,6 +2,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<style>
+body{
+	margin: 0px;
+	padding: 0px;
+}
 h1{
 	font-size: 34px;
 	position:relative; 
@@ -34,6 +38,18 @@ h2{
 	width:40px;
 	height:40px;
 }
+.tips{
+	background-image:url(./icon/tips.png);
+	display:inline-block;
+	width:40px;
+	height:40px;
+}
+.relative{
+	background-image:url(./icon/relative.png);
+	display:inline-block;
+	width:40px;
+	height:40px;
+}
 i{
 	position:relative;
 	display:inline-block;
@@ -61,18 +77,6 @@ ul{
 #introduceDiv{
 	margin-top:50px;
 }
-.section-T1{
-	display:block;
-	padding:30px 36px;
-}
-.section-T2{
-	padding:30px 0px;
-}
-li,p{
-	font-size:28px;
-	font-color:#212832;
-	white-space: pre-wrap;
-}
 #roundBtn{
 	border:1px solid #3EB75A;
 	border-radius:40px;
@@ -81,6 +85,55 @@ li,p{
 	text-align:center;
 	margin:0px auto;
 	margin-top:50px;
+}
+#webIconDiv{
+	margin-top:36px;
+}
+#tipsDiv{
+	margin-top:50px;
+	margin-left:36px;
+}
+#relativeDiv{
+	padding-top:50px;
+	padding-left:36px;
+	border-top:1px solid black;
+}
+.section-T1{
+	display:block;
+	padding:30px 36px;
+}
+.section-T2{
+	padding:30px 0px;
+}
+.section-T4{
+	padding:6px 0px;
+}
+.tipIcon{
+	background-image:url(./icon/star.png);
+	width:40px;
+	height:40px;
+}
+li,p{
+	font-size:28px;
+	font-color:#212832;
+	white-space: pre-wrap;
+	word-break:break-word;
+}
+table{
+	margin:0px auto;
+}
+td{
+	padding-right:36px;
+}
+.img_Bg{
+	position:absolute;
+	display:inline-block;
+	margin-left:-18px;
+}
+.tipIcon{
+	background:url(./icon/tips.png);
+	width:40px;
+	height:40px;
 }
 	</style>
 </head>
@@ -116,5 +169,36 @@ li,p{
 				<li>2.jdfjdlf</li>
 			</ul>
 		</div>
+	</div>
+	<div id="webIconDiv">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<img src="./icon/tecent.png">
+					</td>
+					<td>
+						<img src="./icon/souhu.png">
+					</td>
+					<td>
+						<img src="./icon/letv.png">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="tipsDiv">
+		<img class="img_Bg" src="./icon/tipBg.png">
+		<section class="section-T4">
+			<i class="tips"></i>
+			<h2>title2</h2>
+		</section>
+		<p>balabala</p>
+	</div>
+	<div id="relativeDiv">
+		<section class="section-T5">
+			<i class="relative"></i>
+			<h2>title2</h2>
+		</section>
 	</div>
 </body>
