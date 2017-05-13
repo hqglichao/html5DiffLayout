@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<style>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<style>
 body{
 	margin: 0px;
 	padding: 0px;
@@ -16,7 +17,7 @@ h1{
 }
 h2{
 	font-size:30px;
-	font-color:#212832;
+	color:#212832;
 	margin:0px;
 	padding:0px;
 }
@@ -50,6 +51,18 @@ h2{
 	width:40px;
 	height:40px;
 }
+.hand_up_i{
+	background-image:url(./icon/handUp.png);
+	display:inline-block;
+	width:35px;
+	height:39px;
+}
+.hand_down_i{
+	background-image:url(./icon/handDown.png);
+	display:inline-block;
+	width:35px;
+	height:39px;
+}
 i{
 	position:relative;
 	display:inline-block;
@@ -68,7 +81,7 @@ ul{
 }
 #topTitle{
 	height:100px;
-	border-bottom:1px solid black;
+	border-bottom:1px solid rgba(0,0,0,.2);
 }
 #starDiv,#introduceDiv{
 	padding-left:36px;
@@ -82,6 +95,7 @@ ul{
 	border-radius:40px;
 	height:80px;
 	width:320px;
+	line-height:80px;
 	text-align:center;
 	margin:0px auto;
 	margin-top:50px;
@@ -94,28 +108,56 @@ ul{
 	margin-left:36px;
 }
 #relativeDiv{
-	padding-top:50px;
-	padding-left:36px;
-	border-top:1px solid black;
+	padding:50px 36px;
+	border-top:1px solid rgba(0,0,0,.2);
+	margin-top:50px;
+}
+#bottomBarDiv{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:110px;
+	line-height:110px;
+	width:100%;
+	background:white;
+	box-shadow:0 -2px 4px rgba(0,0,0,.1);
 }
 .section-T1{
 	display:block;
 	padding:30px 36px;
 }
 .section-T2{
-	padding:30px 0px;
+	padding-top:30px;
 }
 .section-T4{
 	padding:6px 0px;
+}
+.bottom_hand_up_down,.section-T6,.section-T7{
+	display:inline-block;
+}
+.section-T6{
+	margin-right:60px;
+}
+.bottom_hand_up_down{
+	float:right;
+	padding-right:74px;
 }
 .tipIcon{
 	background-image:url(./icon/star.png);
 	width:40px;
 	height:40px;
 }
-li,p{
+.detail_info{
+	padding-top:24px;
+}
+.btn_text{
+	height:80px;
+	vertical-align:middle;
+}
+li,.tips_text{
 	font-size:28px;
-	font-color:#212832;
+	color:#212832;
+	line-height:48px;
 	white-space: pre-wrap;
 	word-break:break-word;
 }
@@ -124,6 +166,10 @@ table{
 }
 td{
 	padding-right:36px;
+}
+a:visited,a:link{
+	color:#3EB75A;
+	text-decoration:none;
 }
 .img_Bg{
 	position:absolute;
@@ -135,70 +181,115 @@ td{
 	width:40px;
 	height:40px;
 }
-	</style>
-</head>
-<body>
-	<div id="topTitle">
-		<section class="section-T1">
-			<i class="topIcon"></i>
-			<h1>title</h1>
-		</section>
-	</div>
-	<div id="starDiv">
-		<section class="section-T2">
-			<i class="star"></i>
-			<h2>title2</h2>
-		</section>
-		<div>
-			<ul>
-				<li>1.dfkdjfk</li>
-				<li>2.jdfjdlf</li>
+.li_img{
+	text-align:center;
+}
+p{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	font-size:28px;
+	color:#212832;
+	vertical-align:middle;
+}
+p.p_bottom_bar{
+	height:110px;
+	margin:0px;
+	padding:0px;
+	padding-left:36px;
+	font-size:28px;
+	color:#212832;
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+}
+.hand_up_p,.hand_down_p{
+	padding-left:20px;
+}
+		</style>
+	</head>
+	<body>
+		<div id="topTitle">
+			<section class="section-T1">
+				<i class="topIcon"></i>
+				<h1>°ïÖúÎÄµµ</h1>
+			</section>
+		</div>
+		<div id="starDiv">
+			<section class="section-T2">
+				<i class="star"></i>
+				<h2>title2.1</h2>
+			</section>
+			<div class="detail_info">
+				<ul>
+					<li>1.dfkdjfk</li>
+					<li>2.jdfjdlf</li>
+				</ul>
+			</div>
+		</div>
+		<div id="roundBtn">
+			<span class="btn_text">dddddd</span>
+		</div>
+		<div id="introduceDiv">
+			<section class="section-T3">
+				<i class="introduce"></i>
+				<h2>title2.2</h2>
+			</section>
+			<div class="detail_info">
+				<ul>
+					<li>1.dfkdjfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk</li>
+					<li class="li_img"><img src="./image/test1.png"></img></li>
+					<li>2.jdfjdlf</li>
+				</ul>
+			</div>
+		</div>
+		<div id="webIconDiv">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<img src="./icon/tecent.png">
+						</td>
+						<td>
+							<img src="./icon/souhu.png">
+						</td>
+						<td>
+							<img src="./icon/letv.png">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="tipsDiv">
+			<img class="img_Bg" src="./icon/tipBg.png">
+			<section class="section-T4">
+				<i class="tips"></i>
+				<h2>title2.3</h2>
+			</section>
+			<p class="detail_info tips_text">balabala</p>
+		</div>
+		<div id="relativeDiv">
+			<section class="section-T5">
+				<i class="relative"></i>
+				<h2>title2</h2>
+			</section>
+			<ul class="detail_info">
+				<li><a href="#">ddddd</a></li>
+				<li><a href="#">eeeee</a></li>
 			</ul>
 		</div>
-	</div>
-	<div id="roundBtn">
-	</div>
-	<div id="introduceDiv">
-		<section class="section-T3">
-			<i class="introduce"></i>
-			<h2>title2</h2>
-		</section>
-		<div>
-			<ul>
-				<li>1.dfkdjfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk</li>
-				<li>2.jdfjdlf</li>
-			</ul>
+		<div id="bottomBarDiv">
+			<p class="p_bottom_bar">useful tip</p>
+			<div class="bottom_hand_up_down">
+				<section class="section-T6">
+					<i class="hand_up_i"></i>
+					<p class="hand_up_p">up</p>
+				</section>
+				<section class="section-T7">
+					<i class="hand_down_i"></i>
+					<p class="hand_down_p">down</p>
+				</section>
+			</div>
 		</div>
-	</div>
-	<div id="webIconDiv">
-		<table>
-			<tbody>
-				<tr>
-					<td>
-						<img src="./icon/tecent.png">
-					</td>
-					<td>
-						<img src="./icon/souhu.png">
-					</td>
-					<td>
-						<img src="./icon/letv.png">
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div id="tipsDiv">
-		<img class="img_Bg" src="./icon/tipBg.png">
-		<section class="section-T4">
-			<i class="tips"></i>
-			<h2>title2</h2>
-		</section>
-		<p>balabala</p>
-	</div>
-	<div id="relativeDiv">
-		<section class="section-T5">
-			<i class="relative"></i>
-			<h2>title2</h2>
-		</section>
-	</div>
-</body>
+	</body>
+</html>
