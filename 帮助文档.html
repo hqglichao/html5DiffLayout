@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 		<style>
 body{
 	margin: 0px;
@@ -21,35 +21,25 @@ h2{
 	margin:0px;
 	padding:0px;
 }
-.topIcon{
-	background-image:url(./icon/question.png);
+.topIcon,.star,.introduce,.tips,.relative{
 	display:inline-block;
 	width:40px;
 	height:40px;
+}
+.topIcon{
+	background-image:url(./icon/question.png);
 }
 .star{
 	background-image:url(./icon/star.png);
-	display:inline-block;
-	width:40px;
-	height:40px;
 }
 .introduce{
 	background-image:url(./icon/introduce.png);
-	display:inline-block;
-	width:40px;
-	height:40px;
 }
 .tips{
 	background-image:url(./icon/tips.png);
-	display:inline-block;
-	width:40px;
-	height:40px;
 }
 .relative{
 	background-image:url(./icon/relative.png);
-	display:inline-block;
-	width:40px;
-	height:40px;
 }
 .hand_up_i{
 	background-image:url(./icon/handUp.png);
@@ -108,7 +98,8 @@ ul{
 	margin-left:36px;
 }
 #relativeDiv{
-	padding:50px 36px;
+	padding:0px 36px;
+	padding-top:50px;
 	border-top:1px solid rgba(0,0,0,.2);
 	margin-top:50px;
 }
@@ -153,6 +144,8 @@ ul{
 .btn_text{
 	height:80px;
 	vertical-align:middle;
+	font-size:28px;
+	color:#3EB75A;
 }
 li,.tips_text{
 	font-size:28px;
@@ -206,6 +199,17 @@ p.p_bottom_bar{
 .hand_up_p,.hand_down_p{
 	padding-left:20px;
 }
+.tips_h{
+	color:white;
+	font-weight:normal;
+}
+.bottom_margin{
+	height:110px;
+	margin-top:50px;
+}
+.inner-span{
+	color:#3EB75A;
+}
 		</style>
 	</head>
 	<body>
@@ -228,7 +232,7 @@ p.p_bottom_bar{
 			</div>
 		</div>
 		<div id="roundBtn">
-			<span class="btn_text">dddddd</span>
+			<span class="btn_text">开启“省心模式”</span>
 		</div>
 		<div id="introduceDiv">
 			<section class="section-T3">
@@ -264,9 +268,9 @@ p.p_bottom_bar{
 			<img class="img_Bg" src="./icon/tipBg.png">
 			<section class="section-T4">
 				<i class="tips"></i>
-				<h2>title2.3</h2>
+				<h2 class="tips_h">温馨提示</h2>
 			</section>
-			<p class="detail_info tips_text">balabala</p>
+			<p class="detail_info tips_text">温馨提示内容<span class="inner-span">这里颜色不同</span>这里继续加内容</p>
 		</div>
 		<div id="relativeDiv">
 			<section class="section-T5">
@@ -278,16 +282,18 @@ p.p_bottom_bar{
 				<li><a href="#">eeeee</a></li>
 			</ul>
 		</div>
+		<div class="bottom_margin">
+		</div>
 		<div id="bottomBarDiv">
-			<p class="p_bottom_bar">useful tip</p>
+			<p class="p_bottom_bar">此答案对您是否有帮助？</p>
 			<div class="bottom_hand_up_down">
 				<section class="section-T6">
 					<i class="hand_up_i"></i>
-					<p class="hand_up_p">up</p>
+					<p class="hand_up_p">有用</p>
 				</section>
 				<section class="section-T7">
 					<i class="hand_down_i"></i>
-					<p class="hand_down_p">down</p>
+					<p class="hand_down_p">无用</p>
 				</section>
 			</div>
 		</div>
